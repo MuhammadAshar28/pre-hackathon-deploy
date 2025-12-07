@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import ChatWidget from '../ChatWidget';
 
 type FeatureItem = {
   title: string;
@@ -64,6 +65,7 @@ export default function HomepageFeatures(): ReactNode {
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
+          <ChatWidget />
         </div>
         
       </div>

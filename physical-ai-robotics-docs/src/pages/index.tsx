@@ -11,6 +11,11 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
+     <Layout
+      title="Physical AI & Humanoid Robotics Textbook"
+      description="Complete AI-Native textbook for mastering robotics, humanoids, ROS2, VLA systems, and digital twins."
+    >
+
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
@@ -26,6 +31,7 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
+</Layout>
   );
 }
 

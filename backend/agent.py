@@ -9,14 +9,14 @@ enable_verbose_stdout_logging()
 load_dotenv()
 set_tracing_disabled(disabled=True)
 
-gemini_api_key = os.getenv("GEMINI_API_KEY")
+gemini_api_key = "AIzaSyByjQsaWw7c-Ngocx14pRBGzl7l8ef1WaI"
 provider = AsyncOpenAI(
     api_key=gemini_api_key,
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
 model = OpenAIChatCompletionsModel(
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     openai_client=provider
 )
 
@@ -24,11 +24,11 @@ import cohere
 from qdrant_client import QdrantClient
 
 # Initialize Cohere client
-cohere_client = cohere.Client("key-here")
+cohere_client = cohere.Client("z6KTrRHFsu9lAs9gMO7emo5uWsJMRashq3flBGe6")
 # Connect to Qdrant
 qdrant = QdrantClient(
-    url="url-here",
-    api_key="here-key" 
+    url="https://d54c832e-1701-4554-a71f-fd62178d4468.europe-west3-0.gcp.cloud.qdrant.io",
+    api_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.QLG2zy6BxwWzcwTXgHZ3JXoCK76LllXlf0ttzNv3710" 
 )
 
 
