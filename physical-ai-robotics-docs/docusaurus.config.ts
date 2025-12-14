@@ -124,7 +124,7 @@ const config: Config = {
             { label: 'Discord', href: 'https://discordapp.com/invite/physical-ai' },
             { label: 'X', href: 'https://x.com/physical_ai' },
             { label: 'GitHub', href: 'https://github.com/physical-ai/physical-ai-robotics-course' },
-            { label: 'Blog', to: '/blog' },
+            // { label: 'Blog', to: '/blog' },
           ],
         },
         
